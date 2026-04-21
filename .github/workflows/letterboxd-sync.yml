@@ -1,0 +1,36 @@
+name: Sync Letterboxd Reviews
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # toutes les heures
+  workflow_dispatch:       # bouton manuel dans GitHub Actions
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install node-fetch xml2js
+
+      - name: Run sync script
+        run: node scripts/sync-letterboxd.js
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "Letterboxd Bot"
+          git config user.email "bot@letterboxd.com"
+          git add src/data/films.json
+          git diff --staged --quiet || git commit -m "sync: mise à jour films Letterboxd"
+          git push
