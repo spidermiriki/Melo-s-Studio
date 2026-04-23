@@ -124,17 +124,14 @@ export function FilmsPage() {
       </div>
 
       {/* Contenu */}
-      <main className="fp-main">
+      <main className={`fp-main${activeId ? ' has-active' : ''}`}>
 
         {/* Pile VHS */}
         <section className="fp-stack-section">
           <div className="fp-stack">
             {filteredFilms.length > 0
-              ? filteredFilms.map((film, i) => (
-                  <div
-                    key={film.id}
-                    className="fp-stack-row"
-                  >
+              ? filteredFilms.map((film) => (
+                  <div key={film.id} className="fp-stack-row">
                     <DvdItem
                       film={film}
                       isActive={activeId === film.id}
@@ -157,22 +154,24 @@ export function FilmsPage() {
         <section className="fp-review-panel">
           {activeFilm ? (
             <div className="fp-review-content">
-            <div className="fp-spotlight" />
+              <button type="button" className="fp-back-btn" onClick={() => setActiveId(null)}>
+                ◀ RETOUR
+              </button>
+              <div className="fp-spotlight" />
 
-            {/* Cover */}
-            {activeFilm.cover && (
+              {activeFilm.cover && (
                 <img src={activeFilm.cover} alt={activeFilm.title} className="fp-review-cover" />
-            )}
+              )}
 
-            <div className="fp-review-genre">{activeFilm.genre}</div>
-            <h2 className="fp-review-title">{activeFilm.title}</h2>
-            <p className="fp-review-meta">{activeFilm.year} · {activeFilm.director}</p>
-            <Stars note={activeFilm.note} like={!!activeFilm.like} />
-            <div className="fp-review-divider" />
-            {activeFilm.review
-              ? <p className="fp-review-text">{activeFilm.review}</p>
-              : <p className="fp-no-review">[ AUCUNE REVIEW DISPONIBLE ]</p>
-            }
+              <div className="fp-review-genre">{activeFilm.genre}</div>
+              <h2 className="fp-review-title">{activeFilm.title}</h2>
+              <p className="fp-review-meta">{activeFilm.year} · {activeFilm.director}</p>
+              <Stars note={activeFilm.note} like={!!activeFilm.like} />
+              <div className="fp-review-divider" />
+              {activeFilm.review
+                ? <p className="fp-review-text">{activeFilm.review}</p>
+                : <p className="fp-no-review">[ AUCUNE REVIEW DISPONIBLE ]</p>
+              }
             </div>
           ) : (
             <div className="fp-review-empty">

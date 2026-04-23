@@ -539,10 +539,109 @@
   50%       { opacity: 0; }
 }
 
+/* ════════════════════════════════════════
+   BOUTON RETOUR (mobile uniquement)
+════════════════════════════════════════ */
+.fp-back-btn {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  font-family: 'VT323', monospace;
+  font-size: 22px;
+  color: var(--cyan);
+  text-shadow: 0 0 8px var(--cyan);
+  letter-spacing: 3px;
+  background: none;
+  border: 1px solid rgba(0,255,255,0.3);
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  width: 100%;
+  text-align: left;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.fp-back-btn:active {
+  border-color: var(--cyan);
+  box-shadow: 0 0 12px rgba(0,255,255,0.3);
+}
+
+/* ════════════════════════════════════════
+   MOBILE
+════════════════════════════════════════ */
 @media (max-width: 768px) {
-  .fp-main { flex-direction: column; padding: 10px 16px 60px; }
-  .fp-stack-section { flex: none; }
-  .fp-review-panel { padding: 20px 0; border-left: none; border-top: 1px solid #1a1a3a; }
+  /* Labels */
+  .fp-vhs-label  { font-size: 16px; left: 12px; top: 12px; }
+  .fp-vhs-counter { font-size: 18px; right: 12px; top: 12px; }
+
+  /* Header */
+  .fp-header { padding: 44px 0 8px; gap: 10px; }
+  .fp-film-strip { display: none; }
+
+  /* Search */
+  .fp-search-bar { padding: 0 16px; }
+  .fp-search-input { width: 100%; flex: 1; }
+
+  /* Main */
+  .fp-main {
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  /* Pile VHS — liste scrollable plein écran */
+  .fp-stack-section {
+    flex: 1;
+    width: 100%;
+    padding: 8px 16px 20px;
+    overflow-y: auto;
+  }
+
+  .fp-stack { width: 100%; }
+
+  .fp-dvd-case { width: 100%; }
+
+  .fp-dvd-placeholder span { max-width: calc(100vw - 120px); }
+
+  .fp-dvd.active {
+    transform: translateX(0) scale(1.02);
+  }
+
+  /* Review panel — slide depuis la droite */
+  .fp-review-panel {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    background: var(--bg);
+    padding: 52px 20px 60px;
+    border-left: none;
+    border-top: none;
+    overflow-y: auto;
+    transform: translateX(110%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .fp-main.has-active .fp-review-panel {
+    transform: translateX(0);
+  }
+
+  /* Cover — centré, pas flottant */
+  .fp-review-cover {
+    float: none;
+    display: block;
+    width: 130px;
+    margin: 0 auto 20px;
+  }
+
+  /* Titre review */
+  .fp-review-title { font-size: clamp(22px, 7vw, 40px); }
+
+  /* Bouton retour visible sur mobile */
+  .fp-back-btn { display: flex; }
+
+  /* Review vide */
+  .fp-review-empty { height: 200px; }
 }
 
 
