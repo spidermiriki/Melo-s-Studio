@@ -11,16 +11,31 @@ const LETTERBOXD_USER = 'Homelo'
 const FILMS_JSON_PATH = path.resolve('./src/data/films.json')
 // ────────────────────────────────────────────────────
 
-const RSS_URL = `https://letterboxd.com/${LETTERBOXD_USER}/rss/`
+const RSS_URL          = `https://letterboxd.com/${LETTERBOXD_USER}/rss/`
+const REVIEWS_RSS_URL  = `https://letterboxd.com/${LETTERBOXD_USER}/reviews/rss/`
 
 async function main() {
   console.log(`Fetching RSS: ${RSS_URL}`)
-  const res = await fetch(RSS_URL)
-  const xml = await res.text()
-  const parsed = await parseStringPromise(xml)
+  console.log(`Fetching reviews RSS: ${REVIEWS_RSS_URL}`)
 
-  const items = parsed?.rss?.channel?.[0]?.item ?? []
-  console.log(`Found ${items.length} entries in RSS`)
+  const [diaryRes, reviewsRes] = await Promise.all([
+    fetch(RSS_URL),
+    fetch(REVIEWS_RSS_URL),
+  ])
+  const [diaryXml, reviewsXml] = await Promise.all([
+    diaryRes.text(),
+    reviewsRes.text(),
+  ])
+  const [parsedDiary, parsedReviews] = await Promise.all([
+    parseStringPromise(diaryXml),
+    parseStringPromise(reviewsXml),
+  ])
+
+  const diaryItems   = parsedDiary?.rss?.channel?.[0]?.item   ?? []
+  const reviewsItems = parsedReviews?.rss?.channel?.[0]?.item ?? []
+  // diary d'abord, puis reviews (les reviews écrasent si elles ont du texte)
+  const items = [...diaryItems, ...reviewsItems]
+  console.log(`Found ${diaryItems.length} diary entries + ${reviewsItems.length} reviews = ${items.length} total`)
 
   // Charge le films.json existant
   let existingFilms = []
