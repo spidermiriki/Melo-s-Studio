@@ -1,105 +1,91 @@
 // scripts/sync-letterboxd.js
-// Lit le RSS Letterboxd et met à jour src/data/films.json
+// Lit les flux RSS Letterboxd et met à jour src/data/films.json
 
-import fetch from 'node-fetch'
-import { parseStringPromise } from 'xml2js'
+import Parser from 'rss-parser'
 import fs from 'fs'
 import path from 'path'
 
-// ── CONFIG — change ton pseudo ici ──────────────────
+// ── CONFIG ───────────────────────────────────────────
 const LETTERBOXD_USER = 'Homelo'
 const FILMS_JSON_PATH = path.resolve('./src/data/films.json')
 // ────────────────────────────────────────────────────
 
-const RSS_URL          = `https://letterboxd.com/${LETTERBOXD_USER}/rss/`
-const REVIEWS_RSS_URL  = `https://letterboxd.com/${LETTERBOXD_USER}/reviews/rss/`
+const RSS_URL         = `https://letterboxd.com/${LETTERBOXD_USER}/rss/`
+const REVIEWS_RSS_URL = `https://letterboxd.com/${LETTERBOXD_USER}/reviews/rss/`
+
+const parser = new Parser({
+  customFields: {
+    item: [
+      ['letterboxd:filmTitle',    'filmTitle'],
+      ['letterboxd:filmYear',     'filmYear'],
+      ['letterboxd:memberRating', 'memberRating'],
+      ['letterboxd:like',         'liked'],
+      ['letterboxd:watchedDate',  'watchedDate'],
+    ]
+  }
+})
 
 async function main() {
-  console.log(`Fetching RSS: ${RSS_URL}`)
-  console.log(`Fetching reviews RSS: ${REVIEWS_RSS_URL}`)
+  console.log('Fetching RSS feeds...')
 
-  const [diaryRes, reviewsRes] = await Promise.all([
-    fetch(RSS_URL),
-    fetch(REVIEWS_RSS_URL),
-  ])
-  const [diaryXml, reviewsXml] = await Promise.all([
-    diaryRes.text(),
-    reviewsRes.text(),
-  ])
-  const [parsedDiary, parsedReviews] = await Promise.all([
-    parseStringPromise(diaryXml),
-    parseStringPromise(reviewsXml),
+  const [diaryFeed, reviewsFeed] = await Promise.all([
+    parser.parseURL(RSS_URL),
+    parser.parseURL(REVIEWS_RSS_URL),
   ])
 
-  const diaryItems   = parsedDiary?.rss?.channel?.[0]?.item   ?? []
-  const reviewsItems = parsedReviews?.rss?.channel?.[0]?.item ?? []
-  // diary d'abord, puis reviews (les reviews écrasent si elles ont du texte)
-  const items = [...diaryItems, ...reviewsItems]
-  console.log(`Found ${diaryItems.length} diary entries + ${reviewsItems.length} reviews = ${items.length} total`)
+  // diary en premier, puis reviews (les reviews écrasent si elles ont du texte)
+  const items = [...diaryFeed.items, ...reviewsFeed.items]
+  console.log(`Found ${diaryFeed.items.length} diary + ${reviewsFeed.items.length} reviews = ${items.length} total`)
 
-  // Charge le films.json existant
   let existingFilms = []
   if (fs.existsSync(FILMS_JSON_PATH)) {
     existingFilms = JSON.parse(fs.readFileSync(FILMS_JSON_PATH, 'utf-8'))
   }
 
-  // Index par titre+année pour éviter les doublons
-  const existingMap = new Map(
-    existingFilms.map(f => [`${f.title}__${f.year}`, f])
-  )
-
+  const existingMap = new Map(existingFilms.map(f => [`${f.title}__${f.year}`, f]))
   let newCount = 0
   let updatedCount = 0
 
   for (const item of items) {
-    const link = item.link?.[0] ?? ''
-    const filmYear = parseInt(item['letterboxd:filmYear']?.[0] ?? '0')
-    if (link.includes('/list/') || filmYear === 0) continue
-    // Le RSS Letterboxd utilise des namespaces letterboxd:
-    const title       = item['letterboxd:filmTitle']?.[0] ?? item.title?.[0] ?? ''
-    const year        = parseInt(item['letterboxd:filmYear']?.[0] ?? '0')
-    const ratingRaw   = item['letterboxd:memberRating']?.[0]  // ex: "3.5"
-    const note        = ratingRaw ? parseFloat(ratingRaw) : null
-    const liked       = item['letterboxd:like']?.[0] === 'Yes'
-    const review      = item['description']?.[0] ?? ''
-    const watchedDate = item['letterboxd:watchedDate']?.[0] ?? ''
+    const link = item.link ?? ''
+    if (link.includes('/list/')) continue
 
-    // Extrait le lien de l'affiche depuis le contenu HTML du RSS
-    const content = item['description']?.[0] ?? ''
-    console.log('Content snippet:', content.substring(0, 300))
-    const coverMatch = content.match(/src="(https:\/\/a\.ltrbxd\.com\/[^"]+)"/)
+    const title = item.filmTitle ?? ''
+    const year  = parseInt(item.filmYear ?? '0')
+    if (!title || year === 0) continue
+
+    const note        = item.memberRating ? parseFloat(item.memberRating) : null
+    const liked       = item.liked === 'Yes'
+    const watchedDate = item.watchedDate ?? ''
+
+    // rss-parser place le HTML de <description> dans item.content
+    const html = item.content ?? ''
+    const coverMatch = html.match(/src="(https:\/\/a\.ltrbxd\.com\/[^"]+)"/)
     const cover = coverMatch?.[1]?.replace('0-600-0-900', '0-1000-0-1500') ?? ''
 
-    // Nettoie la review (retire les balises HTML)
-    const cleanReview = review
-    .replace(/<[^>]*>/g, '')
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .trim()
-
-const finalReview = cleanReview || ''
+    const cleanReview = html
+      .replace(/<[^>]*>/g, '')
+      .replace(/&amp;/g, '&')
+      .replace(/&lt;/g, '<')
+      .replace(/&gt;/g, '>')
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'")
+      .trim()
 
     const key = `${title}__${year}`
 
     if (existingMap.has(key)) {
-      // Met à jour uniquement les champs venant de Letterboxd
       const existing = existingMap.get(key)
-      const updated = {
+      existingMap.set(key, {
         ...existing,
         note:   note ?? existing.note,
         like:   liked || existing.like,
         cover:  cover || existing.cover,
-        review: finalReview || existing.review,
-      }
-      existingMap.set(key, updated)
+        review: cleanReview || existing.review,
+      })
       updatedCount++
     } else {
-      // Nouveau film — on l'ajoute avec les infos disponibles
-      // genre et director restent vides (pas dans le RSS)
-      const newFilm = {
+      existingMap.set(key, {
         id:       existingFilms.length + newCount + 1,
         title,
         year,
@@ -107,54 +93,40 @@ const finalReview = cleanReview || ''
         genre:    '',
         director: '',
         cover,
-        review:   finalReview,
+        review:   cleanReview,
         like:     liked,
         watchedDate,
-      }
-      existingMap.set(key, newFilm)
+      })
       newCount++
       console.log(`  ➕ Nouveau film: ${title} (${year})`)
     }
   }
-  // ── Récupère aussi les films vus sans review ──
-  const filmsPageRes = await fetch(`https://letterboxd.com/${LETTERBOXD_USER}/films/`, {
-    headers: {
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-    }
-  })
-  const filmsHtml = await filmsPageRes.text()
-  console.log('Films page HTML length:', filmsHtml.length)
-  console.log('Sample HTML:', filmsHtml.substring(0, 500))
 
-  const filmMatches = filmsHtml.matchAll(/data-film-slug="([^"]+)"[^>]*data-film-name="([^"]+)"[^>]*data-film-year="([^"]+)"[^>]*data-owner-rating="([^"]+)"/g)
-
-  for (const match of filmMatches) {
-    const [, slug, title, yearStr, ratingStr] = match
-    const year = parseInt(yearStr)
-    const note = parseInt(ratingStr) / 2
-    const key = `${title}__${year}`
-
-    if (!existingMap.has(key)) {
-      const newFilm = {
-        id: existingFilms.length + newCount + 1,
-        title,
-        year,
-        note,
-        genre: '',
-        director: '',
-        cover: '',
-        review: '',
-        like: false,
+  // ── Films notés sans review (scraping page films) ──
+  try {
+    const res = await fetch(`https://letterboxd.com/${LETTERBOXD_USER}/films/`, {
+      headers: { 'User-Agent': 'Mozilla/5.0' }
+    })
+    const html = await res.text()
+    const matches = html.matchAll(/data-film-name="([^"]+)"[^>]*data-film-year="([^"]+)"[^>]*data-owner-rating="([^"]+)"/g)
+    for (const [, title, yearStr, ratingStr] of matches) {
+      const year = parseInt(yearStr)
+      const note = parseInt(ratingStr) / 2
+      const key  = `${title}__${year}`
+      if (!existingMap.has(key)) {
+        existingMap.set(key, {
+          id: existingFilms.length + newCount + 1,
+          title, year, note,
+          genre: '', director: '', cover: '', review: '', like: false,
+        })
+        newCount++
+        console.log(`  ➕ Film noté sans review: ${title} (${year})`)
       }
-      existingMap.set(key, newFilm)
-      newCount++
-      console.log(`  ➕ Film noté sans review: ${title} (${year})`)
     }
+  } catch (e) {
+    console.warn('⚠️ Scraping films page failed (non-bloquant):', e.message)
   }
 
-
-
-  // Reconstruit le tableau et trie par note décroissante
   const updatedFilms = Array.from(existingMap.values())
     .sort((a, b) => (b.note ?? 0) - (a.note ?? 0))
     .map((f, i) => ({ ...f, id: i + 1 }))
