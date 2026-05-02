@@ -13,6 +13,8 @@ const FILMS_JSON_PATH = path.resolve('./src/data/films.json')
 const RSS_URL         = `https://letterboxd.com/${LETTERBOXD_USER}/rss/`
 const REVIEWS_RSS_URL = `https://letterboxd.com/${LETTERBOXD_USER}/reviews/rss/`
 
+const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+
 const parser = new Parser({
   customFields: {
     item: [
@@ -25,12 +27,19 @@ const parser = new Parser({
   }
 })
 
+async function fetchFeed(url) {
+  const res = await fetch(url, { headers: { 'User-Agent': UA } })
+  if (!res.ok) throw new Error(`HTTP ${res.status} fetching ${url}`)
+  const xml = await res.text()
+  return parser.parseString(xml)
+}
+
 async function main() {
   console.log('Fetching RSS feeds...')
 
   const [diaryFeed, reviewsFeed] = await Promise.all([
-    parser.parseURL(RSS_URL),
-    parser.parseURL(REVIEWS_RSS_URL),
+    fetchFeed(RSS_URL),
+    fetchFeed(REVIEWS_RSS_URL),
   ])
 
   // diary en premier, puis reviews (les reviews écrasent si elles ont du texte)
