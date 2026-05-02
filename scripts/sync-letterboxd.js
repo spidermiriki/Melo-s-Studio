@@ -39,10 +39,12 @@ async function main() {
 
   const [diaryFeed, reviewsFeed] = await Promise.all([
     fetchFeed(RSS_URL),
-    fetchFeed(REVIEWS_RSS_URL),
+    fetchFeed(REVIEWS_RSS_URL).catch(e => {
+      console.warn(`⚠️ Reviews RSS indisponible (${e.message}), on continue sans.`)
+      return { items: [] }
+    }),
   ])
 
-  // diary en premier, puis reviews (les reviews écrasent si elles ont du texte)
   const items = [...diaryFeed.items, ...reviewsFeed.items]
   console.log(`Found ${diaryFeed.items.length} diary + ${reviewsFeed.items.length} reviews = ${items.length} total`)
 
