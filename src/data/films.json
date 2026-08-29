@@ -8563,6 +8563,18 @@
   },
   {
     "id": 672,
+    "title": "The Mandalorian and Grogu",
+    "year": 2026,
+    "note": 3,
+    "genre": "",
+    "director": "",
+    "cover": "https://a.ltrbxd.com/resized/film-poster/1/1/1/1/0/7/3/1111073-star-wars-the-mandalorian-and-grogu-0-1000-0-1500-crop.jpg?v=5da24e2cba",
+    "review": "Watched on Saturday August 29, 2026.",
+    "like": false,
+    "watchedDate": "2026-08-29"
+  },
+  {
+    "id": 673,
     "title": "Bambi: A Tale of Life in the Woods",
     "year": 2024,
     "note": 2.5,
@@ -8573,7 +8585,7 @@
     "like": false
   },
   {
-    "id": 673,
+    "id": 674,
     "title": "Nocovaine",
     "year": 2025,
     "note": 2.5,
@@ -8584,7 +8596,7 @@
     "like": false
   },
   {
-    "id": 674,
+    "id": 675,
     "title": "Final Destination",
     "year": 2000,
     "note": 2.5,
@@ -8595,7 +8607,7 @@
     "like": false
   },
   {
-    "id": 675,
+    "id": 676,
     "title": "Jurassic World Rebirth",
     "year": 2025,
     "note": 2.5,
@@ -8606,7 +8618,7 @@
     "like": false
   },
   {
-    "id": 676,
+    "id": 677,
     "title": "Blade Runner",
     "year": 1982,
     "note": 2.5,
@@ -8617,7 +8629,7 @@
     "like": false
   },
   {
-    "id": 677,
+    "id": 678,
     "title": "Dracula",
     "year": 2025,
     "note": 2.5,
@@ -8628,7 +8640,7 @@
     "like": false
   },
   {
-    "id": 678,
+    "id": 679,
     "title": "Blade",
     "year": 1998,
     "note": 2.5,
@@ -8639,7 +8651,7 @@
     "like": false
   },
   {
-    "id": 679,
+    "id": 680,
     "title": "The Substance",
     "year": 2024,
     "note": 2.5,
@@ -8652,7 +8664,7 @@
     "letterboxdUri": "https://boxd.it/zanS"
   },
   {
-    "id": 680,
+    "id": 681,
     "title": "Cherry",
     "year": 2021,
     "note": 2.5,
@@ -8665,7 +8677,7 @@
     "letterboxdUri": "https://boxd.it/jRhm"
   },
   {
-    "id": 681,
+    "id": 682,
     "title": "Thor: Ragnarok",
     "year": 2017,
     "note": 2.5,
@@ -8678,7 +8690,7 @@
     "letterboxdUri": "https://boxd.it/8MHi"
   },
   {
-    "id": 682,
+    "id": 683,
     "title": "Smile",
     "year": 2022,
     "note": 2.5,
@@ -8691,7 +8703,7 @@
     "letterboxdUri": "https://boxd.it/xjfE"
   },
   {
-    "id": 683,
+    "id": 684,
     "title": "La La Land",
     "year": 2016,
     "note": 2.5,
@@ -8704,7 +8716,7 @@
     "letterboxdUri": "https://boxd.it/a5fa"
   },
   {
-    "id": 684,
+    "id": 685,
     "title": "Free Guy",
     "year": 2021,
     "note": 2.5,
@@ -8717,7 +8729,7 @@
     "letterboxdUri": "https://boxd.it/k8dm"
   },
   {
-    "id": 685,
+    "id": 686,
     "title": "Gladiator II",
     "year": 2024,
     "note": 2.5,
@@ -8730,7 +8742,7 @@
     "letterboxdUri": "https://boxd.it/kqQQ"
   },
   {
-    "id": 686,
+    "id": 687,
     "title": "Oz",
     "year": 2014,
     "note": 2.5,
@@ -8743,7 +8755,7 @@
     "letterboxdUri": "https://boxd.it/vqDk"
   },
   {
-    "id": 687,
+    "id": 688,
     "title": "Red One",
     "year": 2024,
     "note": 2.5,
@@ -8756,7 +8768,7 @@
     "letterboxdUri": "https://boxd.it/vTBM"
   },
   {
-    "id": 688,
+    "id": 689,
     "title": "Pacific Rim",
     "year": 2013,
     "note": 2.5,
@@ -8769,7 +8781,7 @@
     "letterboxdUri": "https://boxd.it/2cB2"
   },
   {
-    "id": 689,
+    "id": 690,
     "title": "A Good Marriage",
     "year": 2014,
     "note": 2.5,
@@ -8782,7 +8794,7 @@
     "letterboxdUri": "https://boxd.it/8X4G"
   },
   {
-    "id": 690,
+    "id": 691,
     "title": "Jujutsu Kaisen 0",
     "year": 2021,
     "note": 2.5,
@@ -8795,7 +8807,7 @@
     "letterboxdUri": "https://boxd.it/uvFS"
   },
   {
-    "id": 691,
+    "id": 692,
     "title": "Masters of the Universe",
     "year": 2026,
     "note": 2.5,
@@ -8807,7 +8819,7 @@
     "watchedDate": "2026-08-17"
   },
   {
-    "id": 692,
+    "id": 693,
     "title": "Vivarium",
     "year": 2019,
     "note": 2,
@@ -8818,7 +8830,7 @@
     "like": false
   },
   {
-    "id": 693,
+    "id": 694,
     "title": "Captain America: Brave New World",
     "year": 2025,
     "note": 2,
@@ -8829,7 +8841,7 @@
     "like": false
   },
   {
-    "id": 694,
+    "id": 695,
     "title": "Drop",
     "year": 2025,
     "note": 2,
@@ -8840,7 +8852,7 @@
     "like": false
   },
   {
-    "id": 695,
+    "id": 696,
     "title": "The Final Destination",
     "year": 2009,
     "note": 2,
@@ -8851,7 +8863,7 @@
     "like": false
   },
   {
-    "id": 696,
+    "id": 697,
     "title": "Wall to Wall",
     "year": 2025,
     "note": 2,
@@ -8862,7 +8874,7 @@
     "like": false
   },
   {
-    "id": 697,
+    "id": 698,
     "title": "The Conjuring: Last Rites",
     "year": 2025,
     "note": 2,
@@ -8873,7 +8885,7 @@
     "like": false
   },
   {
-    "id": 698,
+    "id": 699,
     "title": "Mc Walter",
     "year": 2025,
     "note": 2,
@@ -8884,7 +8896,7 @@
     "like": false
   },
   {
-    "id": 699,
+    "id": 700,
     "title": "Bambi: The Reckoning",
     "year": 2025,
     "note": 2,
@@ -8896,7 +8908,7 @@
     "watchedDate": "2025-12-23"
   },
   {
-    "id": 700,
+    "id": 701,
     "title": "McWalter",
     "year": 2025,
     "note": 2,
@@ -8908,7 +8920,7 @@
     "watchedDate": "2025-10-19"
   },
   {
-    "id": 701,
+    "id": 702,
     "title": "The Shining",
     "year": 1980,
     "note": 2,
@@ -8921,7 +8933,7 @@
     "letterboxdUri": "https://boxd.it/29Nu"
   },
   {
-    "id": 702,
+    "id": 703,
     "title": "Black Swan",
     "year": 2010,
     "note": 2,
@@ -8934,7 +8946,7 @@
     "letterboxdUri": "https://boxd.it/Sw0"
   },
   {
-    "id": 703,
+    "id": 704,
     "title": "Black Panther",
     "year": 2018,
     "note": 2,
@@ -8947,7 +8959,7 @@
     "letterboxdUri": "https://boxd.it/8MHs"
   },
   {
-    "id": 704,
+    "id": 705,
     "title": "Harry Potter and the Prisoner of Azkaban",
     "year": 2004,
     "note": 2,
@@ -8960,7 +8972,7 @@
     "letterboxdUri": "https://boxd.it/29Qy"
   },
   {
-    "id": 705,
+    "id": 706,
     "title": "Immaculate",
     "year": 2024,
     "note": 2,
@@ -8973,7 +8985,7 @@
     "letterboxdUri": "https://boxd.it/Douw"
   },
   {
-    "id": 706,
+    "id": 707,
     "title": "Trolls Band Together",
     "year": 2023,
     "note": 2,
@@ -8986,7 +8998,7 @@
     "letterboxdUri": "https://boxd.it/y3RO"
   },
   {
-    "id": 707,
+    "id": 708,
     "title": "The Little Mermaid",
     "year": 2023,
     "note": 2,
@@ -8999,7 +9011,7 @@
     "letterboxdUri": "https://boxd.it/fVum"
   },
   {
-    "id": 708,
+    "id": 709,
     "title": "M3GAN",
     "year": 2022,
     "note": 2,
@@ -9012,7 +9024,7 @@
     "letterboxdUri": "https://boxd.it/jxmG"
   },
   {
-    "id": 709,
+    "id": 710,
     "title": "Black Adam",
     "year": 2022,
     "note": 2,
@@ -9025,7 +9037,7 @@
     "letterboxdUri": "https://boxd.it/fup0"
   },
   {
-    "id": 710,
+    "id": 711,
     "title": "Lightyear",
     "year": 2022,
     "note": 2,
@@ -9038,7 +9050,7 @@
     "letterboxdUri": "https://boxd.it/qV1G"
   },
   {
-    "id": 711,
+    "id": 712,
     "title": "Don't Breathe 2",
     "year": 2021,
     "note": 2,
@@ -9051,7 +9063,7 @@
     "letterboxdUri": "https://boxd.it/hla0"
   },
   {
-    "id": 712,
+    "id": 713,
     "title": "Jumanji: The Next Level",
     "year": 2019,
     "note": 2,
@@ -9064,7 +9076,7 @@
     "letterboxdUri": "https://boxd.it/ixu4"
   },
   {
-    "id": 713,
+    "id": 714,
     "title": "Countdown",
     "year": 2019,
     "note": 2,
@@ -9077,7 +9089,7 @@
     "letterboxdUri": "https://boxd.it/m83K"
   },
   {
-    "id": 714,
+    "id": 715,
     "title": "Toy Story 4",
     "year": 2019,
     "note": 2,
@@ -9090,7 +9102,7 @@
     "letterboxdUri": "https://boxd.it/9ALu"
   },
   {
-    "id": 715,
+    "id": 716,
     "title": "Men in Black: International",
     "year": 2019,
     "note": 2,
@@ -9103,7 +9115,7 @@
     "letterboxdUri": "https://boxd.it/hdJw"
   },
   {
-    "id": 716,
+    "id": 717,
     "title": "Shazam!",
     "year": 2019,
     "note": 2,
@@ -9116,7 +9128,7 @@
     "letterboxdUri": "https://boxd.it/8WBu"
   },
   {
-    "id": 717,
+    "id": 718,
     "title": "To All the Boys I've Loved Before",
     "year": 2018,
     "note": 2,
@@ -9129,7 +9141,7 @@
     "letterboxdUri": "https://boxd.it/gHec"
   },
   {
-    "id": 718,
+    "id": 719,
     "title": "Hotel Transylvania 3: Summer Vacation",
     "year": 2018,
     "note": 2,
@@ -9142,7 +9154,7 @@
     "letterboxdUri": "https://boxd.it/e1zI"
   },
   {
-    "id": 719,
+    "id": 720,
     "title": "Slender Man",
     "year": 2018,
     "note": 2,
@@ -9155,7 +9167,7 @@
     "letterboxdUri": "https://boxd.it/fBcs"
   },
   {
-    "id": 720,
+    "id": 721,
     "title": "Truth or Dare",
     "year": 2018,
     "note": 2,
@@ -9168,7 +9180,7 @@
     "letterboxdUri": "https://boxd.it/grIA"
   },
   {
-    "id": 721,
+    "id": 722,
     "title": "Maze Runner: The Death Cure",
     "year": 2018,
     "note": 2,
@@ -9181,7 +9193,7 @@
     "letterboxdUri": "https://boxd.it/bakw"
   },
   {
-    "id": 722,
+    "id": 723,
     "title": "Jumanji: Welcome to the Jungle",
     "year": 2017,
     "note": 2,
@@ -9194,7 +9206,7 @@
     "letterboxdUri": "https://boxd.it/bUeE"
   },
   {
-    "id": 723,
+    "id": 724,
     "title": "Baywatch",
     "year": 2017,
     "note": 2,
@@ -9207,7 +9219,7 @@
     "letterboxdUri": "https://boxd.it/biG6"
   },
   {
-    "id": 724,
+    "id": 725,
     "title": "Ouija: Origin of Evil",
     "year": 2016,
     "note": 2,
@@ -9220,7 +9232,7 @@
     "letterboxdUri": "https://boxd.it/b5EG"
   },
   {
-    "id": 725,
+    "id": 726,
     "title": "The Shallows",
     "year": 2016,
     "note": 2,
@@ -9233,7 +9245,7 @@
     "letterboxdUri": "https://boxd.it/aXgQ"
   },
   {
-    "id": 726,
+    "id": 727,
     "title": "Central Intelligence",
     "year": 2016,
     "note": 2,
@@ -9246,7 +9258,7 @@
     "letterboxdUri": "https://boxd.it/9DFE"
   },
   {
-    "id": 727,
+    "id": 728,
     "title": "Captain Fantastic",
     "year": 2016,
     "note": 2,
@@ -9259,7 +9271,7 @@
     "letterboxdUri": "https://boxd.it/b2K2"
   },
   {
-    "id": 728,
+    "id": 729,
     "title": "Star Wars: The Force Awakens",
     "year": 2015,
     "note": 2,
@@ -9272,7 +9284,7 @@
     "letterboxdUri": "https://boxd.it/4vru"
   },
   {
-    "id": 729,
+    "id": 730,
     "title": "Scouts Guide to the Zombie Apocalypse",
     "year": 2015,
     "note": 2,
@@ -9285,7 +9297,7 @@
     "letterboxdUri": "https://boxd.it/8i6Q"
   },
   {
-    "id": 730,
+    "id": 731,
     "title": "The SpongeBob Movie: Sponge Out of Water",
     "year": 2015,
     "note": 2,
@@ -9298,7 +9310,7 @@
     "letterboxdUri": "https://boxd.it/6JxU"
   },
   {
-    "id": 731,
+    "id": 732,
     "title": "The Smurfs 2",
     "year": 2013,
     "note": 2,
@@ -9311,7 +9323,7 @@
     "letterboxdUri": "https://boxd.it/2HvO"
   },
   {
-    "id": 732,
+    "id": 733,
     "title": "World War Z",
     "year": 2013,
     "note": 2,
@@ -9324,7 +9336,7 @@
     "letterboxdUri": "https://boxd.it/2p2E"
   },
   {
-    "id": 733,
+    "id": 734,
     "title": "Madagascar 3: Europe's Most Wanted",
     "year": 2012,
     "note": 2,
@@ -9337,7 +9349,7 @@
     "letterboxdUri": "https://boxd.it/2NF6"
   },
   {
-    "id": 734,
+    "id": 735,
     "title": "Mulan",
     "year": 1998,
     "note": 2,
@@ -9350,7 +9362,7 @@
     "letterboxdUri": "https://boxd.it/1VFw"
   },
   {
-    "id": 735,
+    "id": 736,
     "title": "Joker: Folie à Deux",
     "year": 2024,
     "note": 2,
@@ -9363,7 +9375,7 @@
     "letterboxdUri": "https://boxd.it/xBoE"
   },
   {
-    "id": 736,
+    "id": 737,
     "title": "The Platform 2",
     "year": 2024,
     "note": 2,
@@ -9376,7 +9388,7 @@
     "letterboxdUri": "https://boxd.it/Gz88"
   },
   {
-    "id": 737,
+    "id": 738,
     "title": "Captain Marvel",
     "year": 2019,
     "note": 2,
@@ -9389,7 +9401,7 @@
     "letterboxdUri": "https://boxd.it/9vSA"
   },
   {
-    "id": 738,
+    "id": 739,
     "title": "Captain America: The First Avenger",
     "year": 2011,
     "note": 2,
@@ -9402,7 +9414,7 @@
     "letterboxdUri": "https://boxd.it/28b0"
   },
   {
-    "id": 739,
+    "id": 740,
     "title": "Ant-Man",
     "year": 2015,
     "note": 2,
@@ -9415,7 +9427,7 @@
     "letterboxdUri": "https://boxd.it/3vmW"
   },
   {
-    "id": 740,
+    "id": 741,
     "title": "Iron Man 3",
     "year": 2013,
     "note": 2,
@@ -9428,7 +9440,7 @@
     "letterboxdUri": "https://boxd.it/2cBQ"
   },
   {
-    "id": 741,
+    "id": 742,
     "title": "Iron Man 2",
     "year": 2010,
     "note": 2,
@@ -9441,7 +9453,7 @@
     "letterboxdUri": "https://boxd.it/1WZM"
   },
   {
-    "id": 742,
+    "id": 743,
     "title": "Ant-Man and the Wasp",
     "year": 2018,
     "note": 2,
@@ -9454,7 +9466,7 @@
     "letterboxdUri": "https://boxd.it/cqUW"
   },
   {
-    "id": 743,
+    "id": 744,
     "title": "X-Men",
     "year": 2011,
     "note": 2,
@@ -9467,7 +9479,7 @@
     "letterboxdUri": "https://boxd.it/sfIC"
   },
   {
-    "id": 744,
+    "id": 745,
     "title": "Dark Phoenix",
     "year": 2019,
     "note": 2,
@@ -9480,7 +9492,7 @@
     "letterboxdUri": "https://boxd.it/anyO"
   },
   {
-    "id": 745,
+    "id": 746,
     "title": "The New Mutants",
     "year": 2020,
     "note": 2,
@@ -9493,7 +9505,7 @@
     "letterboxdUri": "https://boxd.it/bjle"
   },
   {
-    "id": 746,
+    "id": 747,
     "title": "Hellraiser",
     "year": 1987,
     "note": 2,
@@ -9506,7 +9518,7 @@
     "letterboxdUri": "https://boxd.it/1Zpi"
   },
   {
-    "id": 747,
+    "id": 748,
     "title": "Child's Play",
     "year": 1988,
     "note": 2,
@@ -9519,7 +9531,7 @@
     "letterboxdUri": "https://boxd.it/1VTo"
   },
   {
-    "id": 748,
+    "id": 749,
     "title": "The Black Phone",
     "year": 2021,
     "note": 2,
@@ -9532,7 +9544,7 @@
     "letterboxdUri": "https://boxd.it/sqFE"
   },
   {
-    "id": 749,
+    "id": 750,
     "title": "Winnie-the-Pooh: Blood and Honey 2",
     "year": 2024,
     "note": 2,
@@ -9545,7 +9557,7 @@
     "letterboxdUri": "https://boxd.it/EPuU"
   },
   {
-    "id": 750,
+    "id": 751,
     "title": "Zombieland",
     "year": 2009,
     "note": 2,
@@ -9558,7 +9570,7 @@
     "letterboxdUri": "https://boxd.it/1En6"
   },
   {
-    "id": 751,
+    "id": 752,
     "title": "The Terminal",
     "year": 2004,
     "note": 2,
@@ -9571,7 +9583,7 @@
     "letterboxdUri": "https://boxd.it/2a2O"
   },
   {
-    "id": 752,
+    "id": 753,
     "title": "Ghostbusters: Frozen Empire",
     "year": 2024,
     "note": 2,
@@ -9584,7 +9596,7 @@
     "letterboxdUri": "https://boxd.it/AxYu"
   },
   {
-    "id": 753,
+    "id": 754,
     "title": "The Garfield Movie",
     "year": 2024,
     "note": 2,
@@ -9597,7 +9609,7 @@
     "letterboxdUri": "https://boxd.it/s93y"
   },
   {
-    "id": 754,
+    "id": 755,
     "title": "Bride of Chucky",
     "year": 1998,
     "note": 2,
@@ -9610,7 +9622,7 @@
     "letterboxdUri": "https://boxd.it/1SJU"
   },
   {
-    "id": 755,
+    "id": 756,
     "title": "Pan's Labyrinth",
     "year": 2006,
     "note": 2,
@@ -9623,7 +9635,7 @@
     "letterboxdUri": "https://boxd.it/28No"
   },
   {
-    "id": 756,
+    "id": 757,
     "title": "Matilda",
     "year": 1996,
     "note": 2,
@@ -9636,7 +9648,7 @@
     "letterboxdUri": "https://boxd.it/1VhY"
   },
   {
-    "id": 757,
+    "id": 758,
     "title": "Halloween Ends",
     "year": 2022,
     "note": 2,
@@ -9649,7 +9661,7 @@
     "letterboxdUri": "https://boxd.it/mO8M"
   },
   {
-    "id": 758,
+    "id": 759,
     "title": "Terminator: Dark Fate",
     "year": 2019,
     "note": 2,
@@ -9662,7 +9674,7 @@
     "letterboxdUri": "https://boxd.it/96YI"
   },
   {
-    "id": 759,
+    "id": 760,
     "title": "Terminator Genisys",
     "year": 2015,
     "note": 2,
@@ -9675,7 +9687,7 @@
     "letterboxdUri": "https://boxd.it/35s0"
   },
   {
-    "id": 760,
+    "id": 761,
     "title": "Spaceman",
     "year": 2024,
     "note": 2,
@@ -9688,7 +9700,7 @@
     "letterboxdUri": "https://boxd.it/nC20"
   },
   {
-    "id": 761,
+    "id": 762,
     "title": "Smile 2",
     "year": 2024,
     "note": 2,
@@ -9701,7 +9713,7 @@
     "letterboxdUri": "https://boxd.it/FDA4"
   },
   {
-    "id": 762,
+    "id": 763,
     "title": "Anaconda",
     "year": 1997,
     "note": 2,
@@ -9714,7 +9726,7 @@
     "letterboxdUri": "https://boxd.it/1YSy"
   },
   {
-    "id": 763,
+    "id": 764,
     "title": "King Kong",
     "year": 2005,
     "note": 2,
@@ -9727,7 +9739,7 @@
     "letterboxdUri": "https://boxd.it/2aLa"
   },
   {
-    "id": 764,
+    "id": 765,
     "title": "Nope",
     "year": 2022,
     "note": 2,
@@ -9740,7 +9752,7 @@
     "letterboxdUri": "https://boxd.it/sDCe"
   },
   {
-    "id": 765,
+    "id": 766,
     "title": "Chicken Little",
     "year": 2005,
     "note": 2,
@@ -9753,7 +9765,7 @@
     "letterboxdUri": "https://boxd.it/1Xnu"
   },
   {
-    "id": 766,
+    "id": 767,
     "title": "Sonic the Hedgehog 2",
     "year": 2022,
     "note": 2,
@@ -9766,7 +9778,7 @@
     "letterboxdUri": "https://boxd.it/pb8O"
   },
   {
-    "id": 767,
+    "id": 768,
     "title": "The Lego Movie 2: The Second Part",
     "year": 2019,
     "note": 2,
@@ -9779,7 +9791,7 @@
     "letterboxdUri": "https://boxd.it/8BAU"
   },
   {
-    "id": 768,
+    "id": 769,
     "title": "Dragon Ball Super: Super Hero",
     "year": 2022,
     "note": 2,
@@ -9792,7 +9804,7 @@
     "letterboxdUri": "https://boxd.it/mxII"
   },
   {
-    "id": 769,
+    "id": 770,
     "title": "Dragon Ball Super: Broly",
     "year": 2018,
     "note": 2,
@@ -9805,7 +9817,7 @@
     "letterboxdUri": "https://boxd.it/iaWE"
   },
   {
-    "id": 770,
+    "id": 771,
     "title": "Dragon Ball Z: Fusion Reborn",
     "year": 1995,
     "note": 2,
@@ -9818,7 +9830,7 @@
     "letterboxdUri": "https://boxd.it/14sa"
   },
   {
-    "id": 771,
+    "id": 772,
     "title": "Dragon Ball Z: Cooler's Revenge",
     "year": 1991,
     "note": 2,
@@ -9831,7 +9843,7 @@
     "letterboxdUri": "https://boxd.it/1x4c"
   },
   {
-    "id": 772,
+    "id": 773,
     "title": "Dragon Ball Z: The Tree of Might",
     "year": 1990,
     "note": 2,
@@ -9844,7 +9856,7 @@
     "letterboxdUri": "https://boxd.it/14t8"
   },
   {
-    "id": 773,
+    "id": 774,
     "title": "Dragon Ball Z: Dead Zone",
     "year": 1989,
     "note": 2,
@@ -9857,7 +9869,7 @@
     "letterboxdUri": "https://boxd.it/1pci"
   },
   {
-    "id": 774,
+    "id": 775,
     "title": "Dragon Ball Z: Bojack Unbound",
     "year": 1993,
     "note": 2,
@@ -9870,7 +9882,7 @@
     "letterboxdUri": "https://boxd.it/14su"
   },
   {
-    "id": 775,
+    "id": 776,
     "title": "Dragon Ball Z: Bio-Broly",
     "year": 1994,
     "note": 2,
@@ -9883,7 +9895,7 @@
     "letterboxdUri": "https://boxd.it/14sk"
   },
   {
-    "id": 776,
+    "id": 777,
     "title": "Dragon Ball Z: The World's Strongest",
     "year": 1990,
     "note": 2,
@@ -9896,7 +9908,7 @@
     "letterboxdUri": "https://boxd.it/14ti"
   },
   {
-    "id": 777,
+    "id": 778,
     "title": "Dragon Ball Z: Lord Slug",
     "year": 1991,
     "note": 2,
@@ -9909,7 +9921,7 @@
     "letterboxdUri": "https://boxd.it/14sY"
   },
   {
-    "id": 778,
+    "id": 779,
     "title": "Dragon Ball: Curse of the Blood Rubies",
     "year": 1986,
     "note": 2,
@@ -9922,7 +9934,7 @@
     "letterboxdUri": "https://boxd.it/14mG"
   },
   {
-    "id": 779,
+    "id": 780,
     "title": "Dragon Ball: The Path to Power",
     "year": 1996,
     "note": 2,
@@ -9935,7 +9947,7 @@
     "letterboxdUri": "https://boxd.it/14m2"
   },
   {
-    "id": 780,
+    "id": 781,
     "title": "Dragon Ball: Sleeping Princess in Devil's Castle",
     "year": 1987,
     "note": 2,
@@ -9948,7 +9960,7 @@
     "letterboxdUri": "https://boxd.it/14mw"
   },
   {
-    "id": 781,
+    "id": 782,
     "title": "Dragon Ball: Yo! Son Goku and His Friends Return!!",
     "year": 2008,
     "note": 2,
@@ -9961,7 +9973,7 @@
     "letterboxdUri": "https://boxd.it/15Ew"
   },
   {
-    "id": 782,
+    "id": 783,
     "title": "Dragon Ball Z: Resurrection F - Future Trunks Special Edition",
     "year": 2016,
     "note": 2,
@@ -9974,7 +9986,7 @@
     "letterboxdUri": "https://boxd.it/MQ90"
   },
   {
-    "id": 783,
+    "id": 784,
     "title": "Pokémon 3: The Movie",
     "year": 2000,
     "note": 2,
@@ -9987,7 +9999,7 @@
     "letterboxdUri": "https://boxd.it/1UUA"
   },
   {
-    "id": 784,
+    "id": 785,
     "title": "Pokémon 4Ever",
     "year": 2001,
     "note": 2,
@@ -10000,7 +10012,7 @@
     "letterboxdUri": "https://boxd.it/1RBK"
   },
   {
-    "id": 785,
+    "id": 786,
     "title": "Pokémon Heroes",
     "year": 2002,
     "note": 2,
@@ -10013,7 +10025,7 @@
     "letterboxdUri": "https://boxd.it/1eHE"
   },
   {
-    "id": 786,
+    "id": 787,
     "title": "Pokémon: Lucario and the Mystery of Mew",
     "year": 2005,
     "note": 2,
@@ -10026,7 +10038,7 @@
     "letterboxdUri": "https://boxd.it/1epg"
   },
   {
-    "id": 787,
+    "id": 788,
     "title": "Pokémon: Arceus and the Jewel of Life",
     "year": 2009,
     "note": 2,
@@ -10039,7 +10051,7 @@
     "letterboxdUri": "https://boxd.it/14yW"
   },
   {
-    "id": 788,
+    "id": 789,
     "title": "Pokémon: The Mastermind of Mirage Pokémon",
     "year": 2006,
     "note": 2,
@@ -10052,7 +10064,7 @@
     "letterboxdUri": "https://boxd.it/4qIA"
   },
   {
-    "id": 789,
+    "id": 790,
     "title": "Death Note",
     "year": 2017,
     "note": 2,
@@ -10065,7 +10077,7 @@
     "letterboxdUri": "https://boxd.it/bOS4"
   },
   {
-    "id": 790,
+    "id": 791,
     "title": "Bad Milo!",
     "year": 2013,
     "note": 2,
@@ -10078,7 +10090,7 @@
     "letterboxdUri": "https://boxd.it/5jJy"
   },
   {
-    "id": 791,
+    "id": 792,
     "title": "John Wick: Chapter 4",
     "year": 2023,
     "note": 2,
@@ -10091,7 +10103,7 @@
     "letterboxdUri": "https://boxd.it/mh48"
   },
   {
-    "id": 792,
+    "id": 793,
     "title": "John Wick: Chapter 2",
     "year": 2017,
     "note": 2,
@@ -10104,7 +10116,7 @@
     "letterboxdUri": "https://boxd.it/ayGu"
   },
   {
-    "id": 793,
+    "id": 794,
     "title": "John Wick",
     "year": 2014,
     "note": 2,
@@ -10117,7 +10129,7 @@
     "letterboxdUri": "https://boxd.it/7dEc"
   },
   {
-    "id": 794,
+    "id": 795,
     "title": "John Wick: Chapter 3 - Parabellum",
     "year": 2019,
     "note": 2,
@@ -10130,7 +10142,7 @@
     "letterboxdUri": "https://boxd.it/gmFw"
   },
   {
-    "id": 795,
+    "id": 796,
     "title": "The Grinch",
     "year": 2018,
     "note": 2,
@@ -10143,7 +10155,7 @@
     "letterboxdUri": "https://boxd.it/chpK"
   },
   {
-    "id": 796,
+    "id": 797,
     "title": "Dolittle",
     "year": 2020,
     "note": 2,
@@ -10156,7 +10168,7 @@
     "letterboxdUri": "https://boxd.it/fXEy"
   },
   {
-    "id": 797,
+    "id": 798,
     "title": "Hellboy",
     "year": 2004,
     "note": 2,
@@ -10169,7 +10181,7 @@
     "letterboxdUri": "https://boxd.it/28HK"
   },
   {
-    "id": 798,
+    "id": 799,
     "title": "The Babadook",
     "year": 2014,
     "note": 2,
@@ -10182,7 +10194,7 @@
     "letterboxdUri": "https://boxd.it/77xu"
   },
   {
-    "id": 799,
+    "id": 800,
     "title": "Suicide Squad",
     "year": 2016,
     "note": 2,
@@ -10195,7 +10207,7 @@
     "letterboxdUri": "https://boxd.it/9row"
   },
   {
-    "id": 800,
+    "id": 801,
     "title": "The Super Mario Galaxy Movie",
     "year": 2026,
     "note": 2,
@@ -10207,7 +10219,7 @@
     "watchedDate": "2026-05-18"
   },
   {
-    "id": 801,
+    "id": 802,
     "title": "The Punisher: One Last Kill",
     "year": 2026,
     "note": 2,
@@ -10219,7 +10231,7 @@
     "watchedDate": "2026-05-25"
   },
   {
-    "id": 802,
+    "id": 803,
     "title": "Death of a Unicorn",
     "year": 2025,
     "note": 1.5,
@@ -10230,7 +10242,7 @@
     "like": false
   },
   {
-    "id": 803,
+    "id": 804,
     "title": "Insidious",
     "year": 2010,
     "note": 1.5,
@@ -10241,7 +10253,7 @@
     "like": false
   },
   {
-    "id": 804,
+    "id": 805,
     "title": "Spermageddon",
     "year": 2024,
     "note": 1.5,
@@ -10252,7 +10264,7 @@
     "like": false
   },
   {
-    "id": 805,
+    "id": 806,
     "title": "Marsupilami",
     "year": 2025,
     "note": 1.5,
@@ -10264,7 +10276,7 @@
     "watchedDate": "2026-02-04"
   },
   {
-    "id": 806,
+    "id": 807,
     "title": "Stranger Things 5: The Finale",
     "year": 2025,
     "note": 1.5,
@@ -10276,7 +10288,7 @@
     "watchedDate": "2026-01-01"
   },
   {
-    "id": 807,
+    "id": 808,
     "title": "Dragon Ball Z: Wrath of the Dragon",
     "year": 1995,
     "note": 1.5,
@@ -10289,7 +10301,7 @@
     "letterboxdUri": "https://boxd.it/14s0"
   },
   {
-    "id": 808,
+    "id": 809,
     "title": "Scary Movie",
     "year": 2026,
     "note": 1.5,
@@ -10301,7 +10313,7 @@
     "watchedDate": "2026-07-26"
   },
   {
-    "id": 809,
+    "id": 810,
     "title": "Supergirl",
     "year": 2026,
     "note": 1.5,
@@ -10313,7 +10325,7 @@
     "watchedDate": "2026-08-04"
   },
   {
-    "id": 810,
+    "id": 811,
     "title": "Godzilla × Kong: The New Empire",
     "year": 2024,
     "note": 1,
@@ -10324,7 +10336,7 @@
     "like": false
   },
   {
-    "id": 811,
+    "id": 812,
     "title": "A Minecraft Movie",
     "year": 2025,
     "note": 1,
@@ -10336,7 +10348,7 @@
     "letterboxdUri": "https://boxd.it/zRro"
   },
   {
-    "id": 812,
+    "id": 813,
     "title": "The Monkey",
     "year": 2025,
     "note": 1,
@@ -10347,7 +10359,7 @@
     "like": false
   },
   {
-    "id": 813,
+    "id": 814,
     "title": "The Jack in the box",
     "year": 2019,
     "note": 1,
@@ -10358,7 +10370,7 @@
     "like": false
   },
   {
-    "id": 814,
+    "id": 815,
     "title": "Heart Eyes",
     "year": 2025,
     "note": 1,
@@ -10369,7 +10381,7 @@
     "like": false
   },
   {
-    "id": 815,
+    "id": 816,
     "title": "Fear Street: Prom Queen",
     "year": 2025,
     "note": 1,
@@ -10380,7 +10392,7 @@
     "like": false
   },
   {
-    "id": 816,
+    "id": 817,
     "title": "Z-O-M-B-I-E-S 4: Dawn of the Vampires",
     "year": 2025,
     "note": 1,
@@ -10391,7 +10403,7 @@
     "like": false
   },
   {
-    "id": 817,
+    "id": 818,
     "title": "Knight Moves",
     "year": 1992,
     "note": 1,
@@ -10402,7 +10414,7 @@
     "like": false
   },
   {
-    "id": 818,
+    "id": 819,
     "title": "Return to Silent Hill",
     "year": 2026,
     "note": 1,
@@ -10414,7 +10426,7 @@
     "watchedDate": "2026-02-13"
   },
   {
-    "id": 819,
+    "id": 820,
     "title": "Jurassic World Dominion",
     "year": 2022,
     "note": 1,
@@ -10427,7 +10439,7 @@
     "letterboxdUri": "https://boxd.it/ikXW"
   },
   {
-    "id": 820,
+    "id": 821,
     "title": "The Meg",
     "year": 2018,
     "note": 1,
@@ -10440,7 +10452,7 @@
     "letterboxdUri": "https://boxd.it/bAL4"
   },
   {
-    "id": 821,
+    "id": 822,
     "title": "Jurassic World: Fallen Kingdom",
     "year": 2018,
     "note": 1,
@@ -10453,7 +10465,7 @@
     "letterboxdUri": "https://boxd.it/bOnU"
   },
   {
-    "id": 822,
+    "id": 823,
     "title": "Star Wars: The Last Jedi",
     "year": 2017,
     "note": 1,
@@ -10466,7 +10478,7 @@
     "letterboxdUri": "https://boxd.it/5xme"
   },
   {
-    "id": 823,
+    "id": 824,
     "title": "Ghostbusters",
     "year": 2016,
     "note": 1,
@@ -10479,7 +10491,7 @@
     "letterboxdUri": "https://boxd.it/Vm8"
   },
   {
-    "id": 824,
+    "id": 825,
     "title": "Meg 2: The Trench",
     "year": 2023,
     "note": 1,
@@ -10492,7 +10504,7 @@
     "letterboxdUri": "https://boxd.it/mLvo"
   },
   {
-    "id": 825,
+    "id": 826,
     "title": "The Marvels",
     "year": 2023,
     "note": 1,
@@ -10505,7 +10517,7 @@
     "letterboxdUri": "https://boxd.it/mwU4"
   },
   {
-    "id": 826,
+    "id": 827,
     "title": "Ms. Marvel",
     "year": 2022,
     "note": 1,
@@ -10518,7 +10530,7 @@
     "letterboxdUri": "https://boxd.it/ANCY"
   },
   {
-    "id": 827,
+    "id": 828,
     "title": "Agatha All Along",
     "year": 2024,
     "note": 1,
@@ -10531,7 +10543,7 @@
     "letterboxdUri": "https://boxd.it/Q5dC"
   },
   {
-    "id": 828,
+    "id": 829,
     "title": "Madame Web",
     "year": 2024,
     "note": 1,
@@ -10544,7 +10556,7 @@
     "letterboxdUri": "https://boxd.it/nwD0"
   },
   {
-    "id": 829,
+    "id": 830,
     "title": "Winnie the Pooh: Blood and Honey",
     "year": 2023,
     "note": 1,
@@ -10557,7 +10569,7 @@
     "letterboxdUri": "https://boxd.it/B1rg"
   },
   {
-    "id": 830,
+    "id": 831,
     "title": "Batman v Superman: Dawn of Justice",
     "year": 2016,
     "note": 1,
@@ -10570,7 +10582,7 @@
     "letterboxdUri": "https://boxd.it/6fBW"
   },
   {
-    "id": 831,
+    "id": 832,
     "title": "The Blackening",
     "year": 2022,
     "note": 1,
@@ -10583,7 +10595,7 @@
     "letterboxdUri": "https://boxd.it/C6VM"
   },
   {
-    "id": 832,
+    "id": 833,
     "title": "After",
     "year": 2019,
     "note": 1,
@@ -10596,7 +10608,7 @@
     "letterboxdUri": "https://boxd.it/jBb8"
   },
   {
-    "id": 833,
+    "id": 834,
     "title": "Dragon Ball Z: Super Android 13!",
     "year": 1992,
     "note": 1,
@@ -10609,7 +10621,7 @@
     "letterboxdUri": "https://boxd.it/14sE"
   },
   {
-    "id": 834,
+    "id": 835,
     "title": "Dragon Ball: Mystical Adventure",
     "year": 1988,
     "note": 1,
@@ -10622,7 +10634,7 @@
     "letterboxdUri": "https://boxd.it/3STk"
   },
   {
-    "id": 835,
+    "id": 836,
     "title": "Dragon Ball GT: A Hero's Legacy",
     "year": 1997,
     "note": 1,
@@ -10635,7 +10647,7 @@
     "letterboxdUri": "https://boxd.it/1HzE"
   },
   {
-    "id": 836,
+    "id": 837,
     "title": "Dragon Ball Z Side Story: Plan to Eradicate the Saiyans",
     "year": 1993,
     "note": 1,
@@ -10648,7 +10660,7 @@
     "letterboxdUri": "https://boxd.it/ogk4"
   },
   {
-    "id": 837,
+    "id": 838,
     "title": "Dragon Ball Z: Plan to Eradicate the Super Saiyans",
     "year": 2010,
     "note": 1,
@@ -10661,7 +10673,7 @@
     "letterboxdUri": "https://boxd.it/3akU"
   },
   {
-    "id": 838,
+    "id": 839,
     "title": "Dragon Ball Z: Gather Together! Goku's World",
     "year": 1992,
     "note": 1,
@@ -10674,7 +10686,7 @@
     "letterboxdUri": "https://boxd.it/9wS2"
   },
   {
-    "id": 839,
+    "id": 840,
     "title": "Pokémon the Movie: Mewtwo Strikes Back - Evolution",
     "year": 2019,
     "note": 1,
@@ -10687,7 +10699,7 @@
     "letterboxdUri": "https://boxd.it/kZu6"
   },
   {
-    "id": 840,
+    "id": 841,
     "title": "Pokémon Concierge",
     "year": 2023,
     "note": 1,
@@ -10700,7 +10712,7 @@
     "letterboxdUri": "https://boxd.it/KrNU"
   },
   {
-    "id": 841,
+    "id": 842,
     "title": "Trick 'r Treat",
     "year": 2007,
     "note": 1,
@@ -10713,7 +10725,7 @@
     "letterboxdUri": "https://boxd.it/1zvE"
   },
   {
-    "id": 842,
+    "id": 843,
     "title": "Justice League",
     "year": 2017,
     "note": 1,
@@ -10726,7 +10738,7 @@
     "letterboxdUri": "https://boxd.it/4w68"
   },
   {
-    "id": 843,
+    "id": 844,
     "title": "Into the Deep",
     "year": 2025,
     "note": 0.5,
@@ -10737,7 +10749,7 @@
     "like": false
   },
   {
-    "id": 844,
+    "id": 845,
     "title": "Atoman",
     "year": 2025,
     "note": 0.5,
@@ -10748,7 +10760,7 @@
     "like": false
   },
   {
-    "id": 845,
+    "id": 846,
     "title": "Deathstalker",
     "year": 2025,
     "note": 0.5,
@@ -10760,7 +10772,7 @@
     "watchedDate": "2026-02-16"
   },
   {
-    "id": 846,
+    "id": 847,
     "title": "Zack Snyder's Justice League",
     "year": 2021,
     "note": 0.5,
@@ -10773,7 +10785,7 @@
     "letterboxdUri": "https://boxd.it/tLOk"
   },
   {
-    "id": 847,
+    "id": 848,
     "title": "Thor",
     "year": 2011,
     "note": 0.5,
@@ -10786,7 +10798,7 @@
     "letterboxdUri": "https://boxd.it/1WQU"
   },
   {
-    "id": 848,
+    "id": 849,
     "title": "Thor: The Dark World",
     "year": 2013,
     "note": 0.5,
@@ -10799,7 +10811,7 @@
     "letterboxdUri": "https://boxd.it/2DqA"
   },
   {
-    "id": 849,
+    "id": 850,
     "title": "Thor: Love and Thunder",
     "year": 2022,
     "note": 0.5,
